@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinnamonSri | Advanced Research Project</title>
+    <meta name="description"
+        content="CinnamonSri is a pioneering research project focusing on the advancement of Ceylon Cinnamon cultivation, processing, and distribution through technology.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="assets/images/logo.png" alt="CinnamonSri Logo" class="logo-img"> CinnamonSri
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-links">Home</a></li>
+                <li><a href="#domain" class="nav-links">Domain</a></li>
+                <li><a href="#features" class="nav-links">Features</a></li>
+                <li><a href="#technologies" class="nav-links">Technologies</a></li>
+                <li><a href="#milestones" class="nav-links">Milestones</a></li>
+                <li><a href="#resources" class="nav-links">Resources</a></li>
+                <li><a href="#team" class="nav-links">Team</a></li>
+                <li><a href="#contact" class="nav-links">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge"><i class="ph-fill ph-leaf"></i> Pioneering Smart Agriculture</div>
+            <h1>A Smart IoT-integrated system for enhancing Ceylon Cinnamon Production and Export Efficiency.</h1>
+            <p>CinnamonSri empowers smallholder farmers with an end-to-end, mobile-based AI and IoT platform. Our system
+                seamlessly integrates an automated IoT bark drying system, real-time YOLO-based disease detection,
+                intelligent maturity scanning, and AI-driven quality and price prediction, revolutionizing Ceylon
+                Cinnamon production and ensuring fair, efficient, and data-driven cultivation.</p>
+            <a href="#features" class="btn-primary">Discover Features</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/hero.png" alt="Fresh Cinnamon Sri Lanka">
+        </div>
+    </section>
+
+    <!-- Domain Section -->
+    <section id="domain" class="section-light">
+        <div class="container">
+            <h2 class="section-title">Research Domain</h2>
+            <p class="section-subtitle">Discover how CinnamonSri is transforming the agricultural experience through
+                cutting-edge research.</p>
+
+            <div class="domain-grid">
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="ph-fill ph-book-open"></i></div>
+                    <h3>Research Background</h3>
+                    <p>Traditional cinnamon farming in Sri Lanka relies heavily on manual observation and sun drying.
+                        This dependence causes inefficiencies, unpredictable quality, and vulnerability to weather,
+                        creating a need for accessible, technology-driven solutions for smallholder farmers.</p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="ph-fill ph-warning"></i></div>
+                    <h3>Research Problem</h3>
+                    <p>Farmers face inefficiencies across the pipeline: manual disease detection leads to late
+                        interventions; traditional drying is weather-dependent and slow; maturity assessment is
+                        inconsistent; and pricing relies on inefficient physical market visits and subjective grading.
+                    </p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="ph-fill ph-flask"></i></div>
+                    <h3>Methodology</h3>
+                    <p>Our approach integrates YOLO and MobileNetV2 for disease and maturity detection, IoT with
+                        Raspberry Pi and Edge Impulse for automated drying, and Random Forest for quality and price
+                        prediction—all accessible via a React Native app with a Python backend.</p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="ph-fill ph-file-text"></i></div>
+                    <h3>Literature Survey</h3>
+                    <p>Existing systems are often generalized, lacking crop-specific details like severity-level
+                        classification for diseases or dynamic drying models. Previous studies do not combine deep
+                        learning with real-time estimations and localized market recommendations tailored for Ceylon
+                        Cinnamon.</p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="fa-solid fa-arrows-down-to-line"></i></div>
+                    <h3>Research Gap</h3>
+                    <p>Most solutions are too complex for small-scale farmers, require heavy cloud dependencies, or fail
+                        to provide end-to-end automation. There is no unified system integrating disease detection,
+                        maturity scanning, automated drying, and price prediction.</p>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Research Objectives</h3>
+                    <p>To develop an integrated, mobile-based AI and IoT platform that automates drying, detects
+                        diseases early, classifies stem maturity, and predicts optimal pricing and quality, thereby
+                        empowering smallholder farmers and optimizing the cinnamon supply chain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <p class="section-subtitle">Discover the innovative features that make CinnamonSri exceptional.</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fa-solid fa-temperature-arrow-up"></i>
+                    <h4>Automated IoT Drying System</h4>
+                    <p>Real-time temperature control and TinyML dryness detection using edge AI, reducing drying time
+                        from days to hours.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h4>AI Disease Detection</h4>
+                    <p>YOLO-based deep learning analyzes leaf and bark images to instantly identify diseases, severity
+                        levels, and recommend treatments.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <h4>Maturity Scanning System</h4>
+                    <p>Uses MobileNetV2 and OpenCV to classify cinnamon stem maturity, estimate width, and predict
+                        remaining harvest months.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-tags"></i>
+                    <h4>Intelligent Price Prediction</h4>
+                    <p>Random Forest models provide accurate grade classification, price estimation, and marketplace
+                        recommendations based on simple inputs.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h4>Interactive Farmer App</h4>
+                    <p>A comprehensive React Native (Expo) app for real-time monitoring, AI scanning, and intelligent
+                        decision support.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h4>Offline-Capable Edge AI</h4>
+                    <p>Utilizing Edge Impulse and TinyML to run classification models directly on IoT devices without
+                        relying on constant internet access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="section-light">
+        <div class="container">
+            <h2 class="section-title">Technologies</h2>
+            <p class="section-subtitle">The complete hardware and software stack powering our smart agriculture
+                platform.</p>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h4>Machine Learning</h4>
+                    <p>Random Forest, TinyML, and Edge Impulse for on-device inference and predictive market analytics.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h4>Deep Learning</h4>
+                    <p>YOLO, MobileNetV2, and OpenCV for disease detection, maturity classification, and width
+                        estimation.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h4>IoT & Hardware</h4>
+                    <p>Raspberry Pi, DHT22 sensors, and automated heating systems for localized edge processing and
+                        drying.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-brands fa-react"></i></div>
+                    <h4>Mobile Development</h4>
+                    <p>React Native and Expo Go for a fast, accessible, cross-platform farmer application.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-brands fa-python"></i></div>
+                    <h4>Backend Core</h4>
+                    <p>Python, FlaskAPI, and FastAPI for efficient data routing, image processing, and AI model serving.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-database"></i></div>
+                    <h4>Cloud & Database</h4>
+                    <p>MongoDB for secure scan history persistence and scalable cloud data storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones Section -->
+    <section id="milestones" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Project Milestones</h2>
+            <p class="section-subtitle">Detailed breakdown of our project timeline, deliverables, and assessment
+                criteria.</p>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Project Proposal
+                        <i class="ph-bold ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Defining the scope, objectives, and architecture of CinnamonSri. This initial phase involves
+                            brainstorming, feasibility analysis, and drafting the project charter.</p>
+                        <div class="milestone-info">
+                            <span><i class="ph-bold ph-calendar-blank"></i> <strong>Schedule Date:</strong> Sept
+                                2025</span>
+                            <span><i class="ph-bold ph-scales"></i> <strong>Weightage:</strong> 12%</span>
+                            <span><i class="ph-bold ph-trend-up"></i> <strong>Completion:</strong> 10%</span>
+                        </div>
+                        <div class="milestone-status completed">Completed <i class="ph-bold ph-check-circle"></i></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Progress Presentation-1
+                        <i class="ph-bold ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Showcasing the frontend structure, UI designs, initial React Native development.</p>
+                        <div class="milestone-info">
+                            <span><i class="ph-bold ph-calendar-blank"></i> <strong>Schedule Date:</strong> Jan
+                                2026</span>
+                            <span><i class="ph-bold ph-scales"></i> <strong>Weightage:</strong> 15%</span>
+                            <span><i class="ph-bold ph-trend-up"></i> <strong>Completion:</strong> 50%</span>
+                        </div>
+                        <div class="milestone-status completed">Completed <i class="ph-bold ph-check-circle"></i></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Progress Presentation-2
+                        <i class="ph-bold ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Demonstrating ML model integration for real-time IoT testing, disease detection, maturity
+                            prediction, price and quality prediction and system stability. Completion of IoT
+                            integration. Showcasing the completed frontend and backend structure.</p>
+                        <div class="milestone-info">
+                            <span><i class="ph-bold ph-calendar-blank"></i> <strong>Schedule Date:</strong> Mar
+                                2026</span>
+                            <span><i class="ph-bold ph-scales"></i> <strong>Weightage:</strong> 18%</span>
+                            <span><i class="ph-bold ph-trend-up"></i> <strong>Completion:</strong> 90%</span>
+                        </div>
+                        <div class="milestone-status completed">Completed <i class="ph-bold ph-check-circle"></i></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Final Assessment
+                        <i class="ph-bold ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Comprehensive system review and hardware/software quality assessment. Final bug fixing,
+                            performance optimization, and user acceptance testing with real farmers.</p>
+                        <div class="milestone-info">
+                            <span><i class="ph-bold ph-calendar-blank"></i> <strong>Schedule Date:</strong> May
+                                2026</span>
+                            <span><i class="ph-bold ph-scales"></i> <strong>Weightage:</strong> 19%</span>
+                            <span><i class="ph-bold ph-trend-up"></i> <strong>Completion:</strong> 100%</span>
+                        </div>
+                        <div class="milestone-status upcoming">Upcoming <i class="ph-bold ph-clock"></i></div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Viva and Project Completion
+                        <i class="ph-bold ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Final project presentation, viva, and Q&A session with the examiner panel. Submission of
+                            final documentation and deployment.</p>
+                        <div class="milestone-info">
+                            <span><i class="ph-bold ph-calendar-blank"></i> <strong>Schedule Date:</strong> May
+                                2026</span>
+                            <span><i class="ph-bold ph-scales"></i> <strong>Weightage:</strong> 20%</span>
+                            <span><i class="ph-bold ph-trend-up"></i> <strong>Completion:</strong> 100%</span>
+                        </div>
+                        <div class="milestone-status upcoming">Upcoming <i class="ph-bold ph-clock"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section-light">
+        <div class="container">
+            <h2 class="section-title">Resources</h2>
+            <p class="section-subtitle">Access key project documentation and presentations.</p>
+
+            <div class="resource-tabs">
+                <button class="resource-tab active" data-target="documents-grid">Project Documents</button>
+                <button class="resource-tab" data-target="presentations-grid">Presentations</button>
+            </div>
+
+            <div id="documents-grid" class="resources-grid active-grid">
+                <div class="resource-card">
+                    <i class="ph-fill ph-file-text resource-icon"></i>
+                    <h4>Project Charter</h4>
+                    <!-- Link points to the file in assets/documents. target="_blank" opens it in a new tab -->
+                    <a href="assets/documents/project_charter.pdf" target="_blank" class="view-btn">VIEW <i
+                            class="ph-bold ph-download-simple"></i></a>
+                </div>
+                <div class="resource-card">
+                    <i class="ph-fill ph-file-text resource-icon"></i>
+                    <h4>Proposal Document</h4>
+                    <button class="view-btn toggle-docs-btn">VIEW <i class="ph-bold ph-caret-down"></i></button>
+                    <div class="sub-docs-list" style="display: none;">
+                        <a href="assets/documents/IT22101242_Proposal Report.pdf" target="_blank"><i
+                                class="ph-fill ph-file-pdf"></i> IT22101242 Proposal</a>
+                        <a href="assets/documents/IT22112200_Proposal Report.pdf" target="_blank"><i
+                                class="ph-fill ph-file-pdf"></i> IT22112200 Proposal</a>
+                        <a href="assets/documents/IT22180834_Proposal Report.pdf" target="_blank"><i
+                                class="ph-fill ph-file-pdf"></i> IT22180834 Proposal</a>
+                        <a href="assets/documents/IT22230638_Proposal Report.pdf" target="_blank"><i
+                                class="ph-fill ph-file-pdf"></i> IT22230638 Proposal</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <i class="ph-fill ph-list-checks resource-icon"></i>
+                    <h4>Check List Documents</h4>
+                    <button class="view-btn toggle-docs-btn">VIEW <i class="ph-bold ph-caret-down"></i></button>
+                    <div class="sub-docs-list" style="display: none;">
+                        <div
+                            style="margin-top: 5px; margin-bottom: -5px; font-weight: 700; color: var(--primary-dark); font-size: 0.9rem;">
+                            Checklist 1</div>
+                        <a href="assets/documents/README.md" target="_blank" download><i
+                                class="ph-fill ph-file-code"></i> README.md</a>
+                        <a href="assets/documents/GitHub_Repo_Link.txt" target="_blank" download><i
+                                class="ph-bold ph-link"></i> GitHub Repo Link</a>
+                        <a href="assets/documents/System_Overview_Diagram.png" target="_blank" download><i
+                                class="ph-fill ph-image"></i> System Overview Diagram</a>
+
+                        <div
+                            style="margin-top: 5px; margin-bottom: -5px; font-weight: 700; color: var(--primary-dark); font-size: 0.9rem;">
+                            Checklist 2</div>
+                        <a href="assets/documents/Checklist 2.pdf" target="_blank" download><i
+                                class="ph-fill ph-file-pdf"></i> Checklist 2.pdf</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <i class="ph-fill ph-file-text resource-icon"></i>
+                    <h4>Final Documentation</h4>
+                    <a href="#" class="view-btn">VIEW <i class="ph-bold ph-download-simple"></i></a>
+                </div>
+            </div>
+
+            <div id="presentations-grid" class="resources-grid" style="display: none;">
+                <div class="resource-card">
+                    <i class="ph-fill ph-desktop resource-icon"></i>
+                    <h4>Proposal Presentation</h4>
+                    <a href="#" class="view-btn">VIEW <i class="ph-bold ph-download-simple"></i></a>
+                </div>
+                <div class="resource-card">
+                    <i class="ph-fill ph-desktop resource-icon"></i>
+                    <h4>Progress Presentation I</h4>
+                    <button class="view-btn toggle-docs-btn">VIEW <i class="ph-bold ph-caret-down"></i></button>
+                    <div class="sub-docs-list" style="display: none;">
+                        <a href="assets/documents/pp1.pptx" target="_blank" download><i class="ph-fill ph-presentation-chart"></i> pp1.pptx</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <i class="ph-fill ph-desktop resource-icon"></i>
+                    <h4>Progress Presentation II</h4>
+                    <button class="view-btn toggle-docs-btn">VIEW <i class="ph-bold ph-caret-down"></i></button>
+                    <div class="sub-docs-list" style="display: none;">
+                        <a href="assets/documents/pp2.pptx" target="_blank" download><i class="ph-fill ph-presentation-chart"></i> pp2.pptx</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <i class="ph-fill ph-desktop resource-icon"></i>
+                    <h4>Final Presentation</h4>
+                    <a href="#" class="view-btn">VIEW <i class="ph-bold ph-download-simple"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">Meet the individuals behind CinnamonSri.</p>
+
+            <div class="team-grid supervisors">
+                <div class="team-card">
+                    <div class="team-avatar"><img src="assets/images/supervisor.png" alt="Kapila Dissanayake"></div>
+                    <h3>Kapila Dissanayake</h3>
+                    <p class="role">Supervisor</p>
+                    <p>Assistant Professor, Faculty of Computing, SLIIT</p>
+                    <a href="mailto:kapila.d@sliit.lk" class="email-link">kapila.d@sliit.lk</a>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><img src="assets/images/cosupervisor.jpg" alt="Dasuni Nawinna"></div>
+                    <h3>Dasuni Nawinna</h3>
+                    <p class="role">Co-Supervisor</p>
+                    <p>Professor, Faculty of Computing, SLIIT</p>
+                    <a href="mailto:dasuni.n@sliit.lk" class="email-link">dasuni.n@sliit.lk</a>
+                </div>
+            </div>
+
+            <div class="team-grid members">
+                <div class="team-card">
+                    <div class="team-avatar"><img src="assets/images/student1.jpg" alt="Sandunmeth M.S.S."></div>
+                    <h3>Sandunmeth M.S.S.</h3>
+                    <p class="role">Smart Drying Automation Tool(IoT)</p>
+                    <a href="mailto:salindusandun57@gmail.com" class="email-link">salindusandun57@gmail.com</a>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><img src="assets/images/student2.jpg" alt="Nathasha K.D.S."></div>
+                    <h3>Nathasha K.D.S.</h3>
+                    <p class="role">AI/ML based Quality and Price Prediction</p>
+                    <a href="mailto:shashininathasha2001@gmail.com"
+                        class="email-link">shashininathasha2001@gmail.com</a>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><img src="assets/images/student3.jpg" alt="Tharuka M.S."></div>
+                    <h3>Tharuka M.S.</h3>
+                    <p class="role">Cinnamon Harvest Scanning System</p>
+                    <a href="mailto:savinditharu601@gmail.com" class="email-link">savinditharu611@gmail.com</a>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar"><img src="assets/images/student4.jpg" alt="Iruppuge R.A.F."></div>
+                    <h3>Iruppuge R.A.F.</h3>
+                    <p class="role">Disease Detection System</p>
+                    <a href="mailto:rasinduanuththara@gmail.com" class="email-link">rasinduanuththara@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-light">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with the CinnamonSri research team.</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>SLIIT Campus, New Kandy Road, Malabe, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+94 78 486 0200</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>cinnamonsri.research@gmail.com</p>
+                        </div>
+                    </div>
+                    <img src="assets/images/new_research.jpg" alt="Cinnamon Research" class="contact-img">
+                </div>
+
+                <form class="contact-form">
+                    <h4>Send Us a Message</h4>
+                    <p class="form-desc">Redefining smart agriculture with live IoT integrations and deep learning
+                        predictions.</p>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><img src="assets/images/logo.png" alt="CinnamonSri Logo" class="footer-logo"> CinnamonSri</h3>
+                <p>Empowering Sri Lankan cinnamon farmers through intelligent, data-driven agricultural technologies.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#domain">Domain</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#resources">Documents</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive updates on our project progress.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CinnamonSri Research Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

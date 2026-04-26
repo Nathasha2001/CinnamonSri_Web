@@ -1,0 +1,35 @@
+const fs = require('fs');
+let html = fs.readFileSync('index.html', 'utf8');
+
+html = html.replace(/<link[^>]+family=Inter[^>]+>/s, '<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">');
+html = html.replace('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">', '<script src="https://unpkg.com/@phosphor-icons/web"></script>');
+html = html.replace(/fa-solid fa-leaf/g, 'ph-fill ph-leaf');
+html = html.replace(/fa-solid fa-book-open/g, 'ph-fill ph-book-open');
+html = html.replace(/fa-solid fa-triangle-exclamation/g, 'ph-fill ph-warning');
+html = html.replace(/fa-solid fa-microscope/g, 'ph-fill ph-flask');
+html = html.replace(/fa-solid fa-file-lines/g, 'ph-fill ph-file-text');
+html = html.replace(/fa-solid fa-diagram-project/g, 'ph-fill ph-tree-structure');
+html = html.replace(/fa-solid fa-temperature-half/g, 'ph-fill ph-thermometer');
+html = html.replace(/fa-solid fa-user-doctor/g, 'ph-fill ph-stethoscope');
+html = html.replace(/fa-solid fa-expand/g, 'ph-fill ph-corners-out');
+html = html.replace(/fa-solid fa-chart-pie/g, 'ph-fill ph-chart-pie-slice');
+html = html.replace(/fa-solid fa-chevron-down/g, 'ph-bold ph-caret-down');
+html = html.replace(/fa-solid fa-chevron-up/g, 'ph-bold ph-caret-up');
+html = html.replace(/fa-solid fa-check/g, 'ph-bold ph-check-circle');
+html = html.replace(/fa-solid fa-spinner/g, 'ph-bold ph-spinner-gap');
+html = html.replace(/fa-regular fa-clock/g, 'ph-bold ph-clock');
+html = html.replace(/fa-regular fa-calendar-days/g, 'ph-bold ph-calendar-blank');
+html = html.replace(/fa-solid fa-weight-hanging/g, 'ph-bold ph-scales');
+html = html.replace(/fa-solid fa-chart-line/g, 'ph-bold ph-trend-up');
+html = html.replace(/fa-solid fa-file-pdf/g, 'ph-fill ph-file-pdf');
+html = html.replace(/fa-solid fa-file-code/g, 'ph-fill ph-file-code');
+html = html.replace(/fa-solid fa-file-powerpoint/g, 'ph-fill ph-presentation-chart');
+html = html.replace(/fa-solid fa-link/g, 'ph-bold ph-link');
+html = html.replace(/fa-solid fa-image/g, 'ph-fill ph-image');
+html = html.replace(/fa-solid fa-desktop/g, 'ph-fill ph-desktop');
+html = html.replace(/fa-solid fa-download/g, 'ph-bold ph-download-simple');
+html = html.replace(/fa-solid fa-list-check/g, 'ph-fill ph-list-checks');
+html = html.replace(/fa-solid fa-user-tie/g, 'ph-fill ph-user');
+
+fs.writeFileSync('index.html', html);
+console.log('index.html updated successfully');
